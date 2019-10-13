@@ -1,0 +1,36 @@
+@import url("https://fontlibrary.org/face/hk-grotesk");
+
+.header {
+  padding: 1.5rem 0 1rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.title {
+  color: #444;
+  text-decoration: none;
+  font-family: "HKGroteskBlack", Arial, Helvetica, sans-serif;
+  font-size: 1.8em;
+  margin-left: -3px;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+.nav-item {
+  color: #999999;
+  font-size: 1.2rem;
+  font-family: "HKGroteskMedium", Arial, Helvetica, sans-serif;
+  margin-right: 1.3rem;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  color: #666666;
+}
+
+.active-nav-item {
+  color: #333333;
+}
