@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
-import BlogPost from "../../components/blogPost"
+import BlogPost from "../../components/blog_post"
 import Layout from "../../components/layout"
 
 const BlogPage = () => {
