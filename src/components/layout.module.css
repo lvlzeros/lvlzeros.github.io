@@ -1,3 +1,4 @@
+@import url("https://fontlibrary.org/face/hk-grotesk");
 .container {
   display: flex;
   flex-direction: column;
@@ -8,4 +9,58 @@
 .content {
   flex-grow: 1;
   padding: 1.5rem 0 2rem 0;
+}
+.header {
+  padding: 1.5rem 0 1rem 0;
+  border-bottom: 1px solid #ccc;
+}
+.title {
+  color: #444;
+  text-decoration: none;
+  font-family: "HKGroteskBlack", Arial, Helvetica, sans-serif;
+  font-size: 1.8em;
+  margin-left: -3px;
+}
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+.nav-item {
+  color: #999999;
+  font-size: 1.2rem;
+  font-family: "HKGroteskMedium", Arial, Helvetica, sans-serif;
+  margin-right: 1.3rem;
+  text-decoration: none;
+}
+.nav-item:hover {
+  color: #666666;
+}
+.active-nav-item {
+  color: #333333;
+}
+footer {
+  font-family: "HKGroteskMedium", Arial, Helvetica, sans-serif;
+  padding: 1rem 0 1rem 0;
+  font-size: 1em;
+}
+footer a {
+  text-decoration: none;
+}
+.pagination {
+  display: inline-block;
+}
+.pagination__number {
+  font-family: "HKGroteskMedium", Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+  color: #444;
+  float: left;
+  padding: 10px 18px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin: 0.1em 0.25em;
+}
+.pagination__number__active {
+  background-color: #444;
+  color: #f8f8f8;
 }
