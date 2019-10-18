@@ -1,5 +1,5 @@
 ---
-templateKey: blog-post
+templateKey: blog_template
 title: Hello World
 date: 2019-10-12T10:21:48.488Z
 description: The classical mantra of computer science.
@@ -16,6 +16,8 @@ A "Hello, World!" program is traditionally used to introduce novice programmers 
 
 "Hello, World!" is also traditionally used in a sanity test to make sure that a computer language is correctly installed, and that the operator understands how to use it.
 
-`main( ) {`
-`printf("hello, world\n");`
-`}`
+```
+main() {
+  printf("hello, world\n");
+}
+```

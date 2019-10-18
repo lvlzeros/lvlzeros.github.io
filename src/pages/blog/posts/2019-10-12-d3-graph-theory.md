@@ -1,12 +1,12 @@
 ---
-templateKey: blog-post
+templateKey: blog_template
 title: D3 Graph Theory
 date: 2019-10-08T10:33:10.721Z
 description: A quick and interactive introduction to Graph Theory.
 tags:
   - computer science
 ---
-# D3 Graph Theory
+## D3 Graph Theory
 
 > In mathematics, graph theory is the study of graphs, which are mathematical structures used to model pairwise relations between objects. A graph in this context is made up of vertices, nodes, or points which are connected by edges, arcs, or lines.
 > -- Wikipedia

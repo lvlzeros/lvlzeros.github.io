@@ -17,8 +17,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `markdown-pages`,
+        name: `blog-posts`,
         path: `${__dirname}/src/pages/blog/posts`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `about-page`,
+        path: `${__dirname}/src/pages/about`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -48,13 +55,16 @@ module.exports = {
           {
             resolve: "gatsby-remark-images",
             options: {
-              maxWidth: 1024,
+              maxWidth: 800,
             },
+          },
+          {
+            resolve: "gatsby-remark-prismjs",
+            options: { showLineNumbers: true },
           },
         ],
       },
     },
     `gatsby-plugin-netlify-cms`,
-
   ],
 }

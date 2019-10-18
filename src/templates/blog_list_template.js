@@ -5,29 +5,6 @@ import { graphql } from "gatsby"
 import SEO from "../components/seo"
 import BottomPagination from "../components/bottom_pagination"
 
-export const blogListQuery = graphql`
-  query($skip: Int!, $limit: Int!) {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      limit: $limit
-      skip: $skip
-    ) {
-      edges {
-        node {
-          frontmatter {
-            title
-            date(formatString: "MMMM Do, YYYY")
-          }
-          fields {
-            slug
-          }
-          excerpt
-        }
-      }
-    }
-  }
-`
-
 class BlogList extends Component {
   render() {
     const { currentPage, numPages } = this.props.pageContext
@@ -65,3 +42,27 @@ class BlogList extends Component {
 }
 
 export default BlogList
+
+export const blogListQuery = graphql`
+  query($skip: Int!, $limit: Int!, $templateKey: String!) {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      limit: $limit
+      skip: $skip
+      filter: { fields: { templateKey: { eq: $templateKey } } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            date(formatString: "MMMM Do, YYYY")
+          }
+          fields {
+            slug
+          }
+          excerpt
+        }
+      }
+    }
+  }
+`
