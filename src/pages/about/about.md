@@ -2,5 +2,7 @@
 templateKey: about_page
 title: About
 ---
-# About
-I'm Shian.
+# Shian Poon
+A production planner in the day, an aspiring software developer in the night.
+
+

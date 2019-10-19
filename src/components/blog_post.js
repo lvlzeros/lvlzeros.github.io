@@ -5,11 +5,13 @@ import blogPostStyles from "./blog.module.scss"
 const BlogPost = ({ title, excerpt, date, slug }) => {
   return (
     <div className={blogPostStyles.blogContent}>
-      <Link to={`/blog/${slug}`}>
-        <h1 className={blogPostStyles.title}>{title}</h1>
-        <p className={blogPostStyles.date}>{date}</p>
-        <p className={blogPostStyles.excerpt}>{excerpt}</p>
-      </Link>
+      <div className={blogPostStyles.divider}>
+        <Link to={`/${slug}`}>
+          <h1 className={blogPostStyles.title}>{title}</h1>
+          <p className={blogPostStyles.date}>{date}</p>
+          <p className={blogPostStyles.excerpt}>{excerpt}</p>
+        </Link>
+      </div>
     </div>
   )
 }

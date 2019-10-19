@@ -4,7 +4,7 @@
   flex-direction: column;
   margin: 0 auto;
   max-width: 1024px;
-  min-height: 100vh;
+  min-height: 96vh;
 }
 .content {
   flex-grow: 1;
@@ -18,7 +18,7 @@
   color: #444;
   text-decoration: none;
   font-family: "HKGroteskBlack", Arial, Helvetica, sans-serif;
-  font-size: 1.8em;
+  font-size: 1.2em;
   margin-left: -3px;
 }
 .nav-list {
@@ -41,7 +41,7 @@
 }
 footer {
   font-family: "HKGroteskMedium", Arial, Helvetica, sans-serif;
-  padding: 1rem 0 1rem 0;
+  padding: 1rem 0 0rem 0;
   font-size: 1em;
 }
 footer a {

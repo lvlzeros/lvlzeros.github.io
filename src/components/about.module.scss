@@ -1,10 +1,8 @@
 @import url("https://fontlibrary.org/face/hk-grotesk");
 
-.blog-content {
-
-  .divider {
-    padding: 1rem 0 2rem 0;
-    border-bottom: 1px solid #ccc;
+.about-content {
+  .profile-pic {
+    width: 100%;
   }
 
   a {
@@ -20,14 +18,14 @@
     color: #444;
     text-decoration: none;
     font-family: "HKGroteskBlack", Arial, Helvetica, sans-serif;
-    font-size: 2.3em;
+    font-size: 2.8em;
   }
 
   h2 {
     color: #444;
     text-decoration: none;
     font-family: "HKGroteskBlack", Arial, Helvetica, sans-serif;
-    font-size: 1.8em;
+    font-size: 2em;
   }
 
   p {
@@ -36,11 +34,6 @@
     font-family: "HKGroteskMedium", Arial, Helvetica, sans-serif;
     font-size: 1.1em;
     line-height: 1.4em;
-  }
-
-  img {
-    display: block;
-    margin: 0 auto;
   }
 
   blockquote {
@@ -62,24 +55,35 @@
 
   li {
     font-family: "HKGroteskMedium", Arial, Helvetica, sans-serif;
-    list-style-type: square;
+    list-style-type: none;
+  }
+}
+
+.contact {
+  display: flex;
+  margin: 0;
+
+  li {
+    list-style-type: none;
+
+    img {
+      opacity: 0.8;
+      display: block;
+    }
   }
 
-  .title {
-    color: #444;
-    margin: 0;
+  .tiny-icon {
+    width: calc(36px + 1em);
+    height: calc(36px + 1em);
+    padding: 0.5em 0.5em;
   }
 
-  .date {
-    font-family: "HKGroteskRegular", Arial, Helvetica, sans-serif;
-    color: #444;
-    font-size: 16px;
+  .tiny-icon:hover {
+    background-color: #ddd;
   }
 
-  .excerpt {
-    font-family: "HKGroteskMedium", Arial, Helvetica, sans-serif;
-    color: #444;
-    font-size: 1rem;
-    text-align: justify;
+  .medium_icon {
+    width: 48px;
+    height: 48px;
   }
 }

@@ -1,68 +1,71 @@
 @import url("https://fontlibrary.org/face/hk-grotesk");
-.blog-content .divider {
-  padding: 1rem 0 2rem 0;
-  border-bottom: 1px solid #ccc;
+.about-content .profile-pic {
+  width: 100%;
 }
-.blog-content a {
+.about-content a {
   text-decoration: none;
   font-family: "HKGroteskMedium", Arial, Helvetica, sans-serif;
 }
-.blog-content a:hover {
+.about-content a:hover {
   background-color: #ddd;
 }
-.blog-content h1 {
+.about-content h1 {
   color: #444;
   text-decoration: none;
   font-family: "HKGroteskBlack", Arial, Helvetica, sans-serif;
-  font-size: 2.3em;
+  font-size: 2.8em;
 }
-.blog-content h2 {
+.about-content h2 {
   color: #444;
   text-decoration: none;
   font-family: "HKGroteskBlack", Arial, Helvetica, sans-serif;
-  font-size: 1.8em;
+  font-size: 2em;
 }
-.blog-content p {
+.about-content p {
   color: #444;
   text-decoration: none;
   font-family: "HKGroteskMedium", Arial, Helvetica, sans-serif;
   font-size: 1.1em;
   line-height: 1.4em;
 }
-.blog-content img {
-  display: block;
-  margin: 0 auto;
-}
-.blog-content blockquote {
+.about-content blockquote {
   border-left: 5px solid #ccc;
   padding-left: 1.45rem;
   margin: 0 0 1.45rem 0;
 }
-.blog-content blockquote p {
+.about-content blockquote p {
   color: #777;
   font-size: 1.1em;
   font-style: italic;
 }
-.blog-content .caption {
+.about-content .caption {
   text-align: center;
   font-size: 0.8rem;
 }
-.blog-content li {
+.about-content li {
   font-family: "HKGroteskMedium", Arial, Helvetica, sans-serif;
-  list-style-type: square;
+  list-style-type: none;
 }
-.blog-content .title {
-  color: #444;
+.contact {
+  display: flex;
   margin: 0;
 }
-.blog-content .date {
-  font-family: "HKGroteskRegular", Arial, Helvetica, sans-serif;
-  color: #444;
-  font-size: 16px;
+.contact li {
+  list-style-type: none;
 }
-.blog-content .excerpt {
-  font-family: "HKGroteskMedium", Arial, Helvetica, sans-serif;
-  color: #444;
-  font-size: 1rem;
-  text-align: justify;
+.contact li img {
+  opacity: 0.8;
+  display: block;
+}
+.contact .tiny-icon {
+  width: calc(36px + 1em);
+  height: calc(36px + 1em);
+  padding: 0.5em 0.5em;
+}
+.contact .tiny-icon:hover {
+  background-color: #ddd;
+}
+.contact .medium_icon {
+  width: 48px;
+  height: 48px;
 }

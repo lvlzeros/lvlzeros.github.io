@@ -13,7 +13,7 @@ const BottomPagination = ({ currentPageNum, maxPageNum, address }) => {
       {range(lowerBound, upperBound + 1).map(val => {
         return (
           <Link
-            to={`${address}/${val === 1 ? "" : val}`}
+            to={`${address}/${val === 1 ? "" : "pg" + val}`}
             className={paginationStyles.pagination__number}
             activeClassName={paginationStyles.pagination__number__active}
           >

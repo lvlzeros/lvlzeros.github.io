@@ -1,9 +1,9 @@
-import React, { Component } from "react"
-import Layout from "../components/layout"
-import BlogPost from "../components/blog_post"
 import { graphql } from "gatsby"
-import SEO from "../components/seo"
+import React, { Component } from "react"
+import BlogPost from "../components/blog_post"
 import BottomPagination from "../components/bottom_pagination"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 class BlogList extends Component {
   render() {
@@ -34,7 +34,7 @@ class BlogList extends Component {
         <BottomPagination
           maxPageNum={numPages}
           currentPageNum={currentPage}
-          address={"/blog"}
+          address={"/"}
         />
       </Layout>
     )

@@ -22,12 +22,12 @@ module.exports.onCreateNode = ({ node, actions }) => {
 module.exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage, createRedirect } = actions
 
-  createRedirect({
-    fromPath: `/`,
-    toPath: `/blog`,
-    isPermanent: true,
-    redirectInBrowser: true,
-  })
+  // createRedirect({
+  //   fromPath: `/`,
+  //   toPath: `/blog/`,
+  //   isPermanent: true,
+  //   redirectInBrowser: true,
+  // })
 
   const result = await graphql(`
     {
@@ -76,14 +76,14 @@ module.exports.createPages = async ({ actions, graphql, reporter }) => {
   const numPages = Math.ceil(posts.length / postsPerPage)
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
-      path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+      path: i === 0 ? `/` : `/pg${i + 1}`,
       component: path.resolve("./src/templates/blog_list_template.js"),
       context: {
         limit: postsPerPage,
         skip: i * postsPerPage,
         numPages,
         currentPage: i + 1,
-        templateKey: "blog_template"
+        templateKey: "blog_template",
       },
     })
   })
@@ -91,7 +91,7 @@ module.exports.createPages = async ({ actions, graphql, reporter }) => {
   // Create blog post
   posts.forEach(({ node }) => {
     createPage({
-      path: `/blog/${node.fields.slug}`,
+      path: `/${node.fields.slug}`,
       component: path.resolve(
         `src/templates/${String(node.frontmatter.templateKey)}.js`
       ),

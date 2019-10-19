@@ -1,15 +1,21 @@
 import { graphql } from "gatsby"
 import React from "react"
-import blogStyles from "../components/blog.module.scss"
+import aboutStyles from "../components/about.module.scss"
+import Contact from "../components/contact"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import shian from "../images/shian.jpg"
 
 const AboutPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="About" />
-      <div className={blogStyles.blogContent}>
-        <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+      <div className={aboutStyles.aboutContent}>
+        <img src={shian} alt="Shian" className={aboutStyles.profilePic} />
+        <div
+          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+        />
+        <Contact />
       </div>
     </Layout>
   )
