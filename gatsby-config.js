@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Shian Poon`,
+    title: `Console.Log()`,
     description: ``,
     author: `@lvlzeros`,
   },
@@ -56,11 +56,24 @@ module.exports = {
             resolve: "gatsby-remark-images",
             options: {
               maxWidth: 800,
+              showCaptions: true,
+              backgroundColor: 'none',
             },
           },
           {
             resolve: "gatsby-remark-prismjs",
-            options: { showLineNumbers: true },
+            options: {
+              showLineNumbers: true,
+              inlineCodemarker: ">",
+              noInlineHighlight: false,
+            },
+          },
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank",
+              rel: "nofollow",
+            },
           },
         ],
       },

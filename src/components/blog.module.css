@@ -5,6 +5,10 @@
 }
 .blog-content a {
   text-decoration: none;
+  font-family: "HKGroteskMedium", Arial, Helvetica, sans-serif;
+}
+.blog-content a:hover {
+  background-color: #ddd;
 }
 .blog-content h1 {
   color: #444;
@@ -28,6 +32,24 @@
 .blog-content img {
   display: block;
   margin: 0 auto;
+}
+.blog-content blockquote {
+  border-left: 5px solid #ccc;
+  padding-left: 1.45rem;
+  margin: 0 0 1.45rem 0;
+}
+.blog-content blockquote p {
+  color: #777;
+  font-size: 1.1em;
+  font-style: italic;
+}
+.blog-content .caption {
+  text-align: center;
+  font-size: 0.8rem;
+}
+.blog-content li {
+  font-family: "HKGroteskMedium", Arial, Helvetica, sans-serif;
+  list-style-type: square;
 }
 .blog-content .title {
   color: #444;
