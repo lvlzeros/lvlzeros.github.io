@@ -1,0 +1,67 @@
+@import url("https://fontlibrary.org/face/hk-grotesk");
+.portfolio-content a {
+  text-decoration: none;
+  font-family: "HKGroteskMedium", Arial, Helvetica, sans-serif;
+}
+.portfolio-content a h2:hover {
+  color: #333;
+  text-decoration: underline;
+}
+.portfolio-content a:hover {
+  background-color: #ddd;
+}
+.portfolio-content img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.portfolio-content h1 {
+  color: #444;
+  text-decoration: none;
+  font-family: "HKGroteskBlack", Arial, Helvetica, sans-serif;
+  font-size: 2.8em;
+}
+.portfolio-content h2 {
+  display: block;
+  color: #444;
+  text-decoration: none;
+  font-family: "HKGroteskBlack", Arial, Helvetica, sans-serif;
+  font-size: 2em;
+}
+.portfolio-content p {
+  color: #444;
+  text-decoration: none;
+  font-family: "HKGroteskMedium", Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.4em;
+}
+.portfolio-content blockquote {
+  border-left: 5px solid #ccc;
+  padding-left: 1.45rem;
+  margin: 0 0 1.45rem 0;
+}
+.portfolio-content blockquote p {
+  color: #777;
+  font-size: 1.1em;
+  font-style: italic;
+}
+.portfolio-content .caption {
+  text-align: center;
+  font-size: 0.8rem;
+}
+.portfolio-content li {
+  font-family: "HKGroteskMedium", Arial, Helvetica, sans-serif;
+  list-style-type: none;
+}
+.portfolio-content .portfolio-item-container {
+  margin: 1.5em 0;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid #ccc;
+}
+.portfolio-content .portfolio-item-container .hoverable-img {
+  transition: 0.3s ease-in-out;
+  opacity: 1;
+}
+.portfolio-content .portfolio-item-container .hoverable-img:hover {
+  opacity: 0.8;
+}

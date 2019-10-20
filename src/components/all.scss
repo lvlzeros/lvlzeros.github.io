@@ -655,7 +655,7 @@ pre tt:after {
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-	padding: .1em 0.5em;
-	border-radius: 0em;
-	white-space: normal;
+  padding: 0.1em 0.5em;
+  border-radius: 0em;
+  white-space: normal;
 }

@@ -1,34 +1,39 @@
 @import url("https://fontlibrary.org/face/hk-grotesk");
 
-.blog-content {
-  .divider {
-    padding: 1rem 0 2rem 0;
-    border-bottom: 1px solid #ccc;
-  }
-
+.portfolio-content {
   a {
     text-decoration: none;
     font-family: "HKGroteskMedium", Arial, Helvetica, sans-serif;
+
+    h2:hover {
+      color: #333;
+      text-decoration: underline;
+    }
   }
 
   a:hover {
-    color: none;
-    text-decoration: none;
     background-color: #ddd;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 
   h1 {
     color: #444;
     text-decoration: none;
     font-family: "HKGroteskBlack", Arial, Helvetica, sans-serif;
-    font-size: 2.3em;
+    font-size: 2.8em;
   }
 
   h2 {
+    display: block;
     color: #444;
     text-decoration: none;
     font-family: "HKGroteskBlack", Arial, Helvetica, sans-serif;
-    font-size: 1.8em;
+    font-size: 2em;
   }
 
   p {
@@ -37,11 +42,6 @@
     font-family: "HKGroteskMedium", Arial, Helvetica, sans-serif;
     font-size: 1.1em;
     line-height: 1.4em;
-  }
-
-  img {
-    display: block;
-    margin: 0 auto;
   }
 
   blockquote {
@@ -63,24 +63,21 @@
 
   li {
     font-family: "HKGroteskMedium", Arial, Helvetica, sans-serif;
-    list-style-type: square;
+    list-style-type: none;
   }
 
-  .title {
-    color: #444;
-    margin: 0;
-  }
+  .portfolio-item-container {
+    margin: 1.5em 0;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #ccc;
 
-  .date {
-    font-family: "HKGroteskRegular", Arial, Helvetica, sans-serif;
-    color: #444;
-    font-size: 16px;
-  }
+    .hoverable-img {
+      transition: 0.3s ease-in-out;
+      opacity: 1;
+    }
 
-  .excerpt {
-    font-family: "HKGroteskMedium", Arial, Helvetica, sans-serif;
-    color: #444;
-    font-size: 1rem;
-    text-align: justify;
+    .hoverable-img:hover {
+      opacity: 0.8;
+    }
   }
 }

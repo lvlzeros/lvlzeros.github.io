@@ -57,7 +57,7 @@ module.exports = {
             options: {
               maxWidth: 800,
               showCaptions: true,
-              backgroundColor: 'none',
+              backgroundColor: "none",
             },
           },
           {

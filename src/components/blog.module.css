@@ -8,6 +8,8 @@
   font-family: "HKGroteskMedium", Arial, Helvetica, sans-serif;
 }
 .blog-content a:hover {
+  color: none;
+  text-decoration: none;
   background-color: #ddd;
 }
 .blog-content h1 {
