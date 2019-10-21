@@ -33,7 +33,7 @@ const Contact = () => {
       </li>
       <li>
         <a
-          href="https://twitter.com/lvlzeros"
+          href="https://medium.com/@lvlzeros"
           target="_blank"
           rel="noopener noreferrer"
         >
